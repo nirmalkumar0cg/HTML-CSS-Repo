@@ -1,0 +1,46 @@
+        *{
+            font-family:Arial, Helvetica, sans-serif;
+            margin: 1;
+        }
+        .container{
+            display: flex;
+            gap:1vw;
+        }
+        
+        .sidebar{
+            width: 40%;
+        }
+        .sidebar div{
+            display: flex;
+            width: max-content;
+        }
+        .sidebar p span {
+            display: block;
+        }
+        .middlenav{
+            list-style:none;
+            padding: 2vh 0px 0px 0px;
+            display: flex;
+            flex-direction: column;
+            gap:2vh;
+        }
+        .content{
+            height: inherit;
+            width: 100%;
+            background-image: url(background.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .middlenav li a{
+            color: black;
+            font-weight: bolder;
+            text-decoration: none;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+        .footer{
+            padding-top: 15vh;
+        }
+        .middlenav li a:hover{
+            animation: ease-in;
+        }
+        
