@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ludo Board</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+}
+.game-box {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    background: white;
+}
+.top-part, .bottom-part {
+    height: 40%;
+    width: 100%;
+    display: flex;
+}
+.mid-part {
+    height: 20%;
+    width: 100%;
+    display: flex;
+}
+.base {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.base1 { background: red; }
+.base2 { background: green; }
+.base3 { background: blue; }
+.base4 { background: yellow; }
+.white-box {
+    width: 70%;
+    height: 70%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+.line {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.coin {
+    width: 30px;
+    height: 30px;
+    border: 3px solid;
+    border-radius: 50%;
+    background: white;
+}
+.coin1 { border-color: red; }
+.coin2 { border-color: green; }
+.coin3 { border-color: blue; }
+.coin4 { border-color: yellow; }
+.block {
+    flex: 1;
+    border: 1px solid black;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+}
+.block-g { background: green; }
+.block-r { background: red; }
+.block-b { background: blue; }
+.block-y { background: yellow; }
+.magic {
+    font-size: 18px;
+}
+.up-down-path {
+    width: 20%;
+    height: 100%;
+    display: flex;
+}
+.col {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.left-right-path {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    width: 100%;
+    flex: 1;
+    display: flex;
+}
+.mid {
+    width: 20%;
+    height: 100%;
+    position: relative;
+    background: white;
+}
+.tri {
+    position: absolute;
+}
+.tri1 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: green;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+.tri2 {
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: yellow;
+    clip-path: polygon(100% 0, 100% 100%, 0 50%);
+}
+.tri3 {
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: red;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+.tri4 {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: blue;
+    clip-path: polygon(0 100%, 100% 100%, 50% 0);
+}
+</style>
+</head>
+<body>
+<div class="game-box">
+    <div class="top-part">
+        <div class="base base1">
+            <div class="white-box">
+                <div class="line">
+                    <div class="coin coin1"></div>
+                    <div class="coin coin1"></div>
+                </div>
+                <div class="line">
+                    <div class="coin coin1"></div>
+                    <div class="coin coin1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="up-down-path">
+            <div class="col">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block block-g"><span class="magic">★</span></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+            <div class="col">
+                <div class="block"></div>
+                <div class="block block-g"></div>
+                <div class="block block-g"></div>
+                <div class="block block-g"></div>
+                <div class="block block-g"></div>
+                <div class="block block-g"></div>
+            </div>
+            <div class="col">
+                <div class="block"></div>
+                <div class="block block-g"><span class="magic">★</span></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+        </div>
+        <div class="base base2">
+            <div class="white-box">
+                <div class="line">
+                    <div class="coin coin2"></div>
+                    <div class="coin coin2"></div>
+                </div>
+                <div class="line">
+                    <div class="coin coin2"></div>
+                    <div class="coin coin2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mid-part">
+        <div class="left-right-path">
+            <div class="row">
+                <div class="block"></div>
+                <div class="block block-r"><span class="magic">★</span></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+            <div class="row">
+                <div class="block"></div>
+                <div class="block block-r"></div>
+                <div class="block block-r"></div>
+                <div class="block block-r"></div>
+                <div class="block block-r"></div>
+                <div class="block block-r"></div>
+            </div>
+            <div class="row">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block block-r"><span class="magic">★</span></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="tri tri1"></div>
+            <div class="tri tri2"></div>
+            <div class="tri tri3"></div>
+            <div class="tri tri4"></div>
+        </div>
+        <div class="left-right-path">
+            <div class="row">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block block-y"><span class="magic">★</span></div>
+                <div class="block"></div>
+            </div>
+            <div class="row">
+                <div class="block block-y"></div>
+                <div class="block block-y"></div>
+                <div class="block block-y"></div>
+                <div class="block block-y"></div>
+                <div class="block block-y"></div>
+                <div class="block"></div>
+            </div>
+            <div class="row">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block block-y"><span class="magic">★</span></div>
+                <div class="block"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-part">
+        <div class="base base3">
+            <div class="white-box">
+                <div class="line">
+                    <div class="coin coin3"></div>
+                    <div class="coin coin3"></div>
+                </div>
+                <div class="line">
+                    <div class="coin coin3"></div>
+                    <div class="coin coin3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="up-down-path">
+            <div class="col">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block block-b"><span class="magic">★</span></div>
+                <div class="block"></div>
+            </div>
+            <div class="col">
+                <div class="block block-b"></div>
+                <div class="block block-b"></div>
+                <div class="block block-b"></div>
+                <div class="block block-b"></div>
+                <div class="block block-b"></div>
+                <div class="block block-b"></div>
+            </div>
+            <div class="col">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block block-b"><span class="magic">★</span></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+        </div>
+        <div class="base base4">
+            <div class="white-box">
+                <div class="line">
+                    <div class="coin coin4"></div>
+                    <div class="coin coin4"></div>
+                </div>
+                <div class="line">
+                    <div class="coin coin4"></div>
+                    <div class="coin coin4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

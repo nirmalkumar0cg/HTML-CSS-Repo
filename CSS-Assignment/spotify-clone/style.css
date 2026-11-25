@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sidebar{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 2%;
+}
+.logo{
+    width: 10%;
+    height: 10%;
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A student HTML and CSS recreation of the CodingGita YouTube homepage assignment.">
+  <title>YouTube</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="brand">
+      <span class="icon-button" aria-label="Menu"><img src="assets/hambarger.png" alt=""></span>
+      <a class="logo" href="index.html" aria-label="YouTube home"><img src="assets/Youtube logo.png" alt=""></a>
+    </div>
+    <div class="search-form">
+      <input type="search" id="search" aria-label="Search (layout only)" placeholder="Search" autocomplete="off">
+      <span class="search-button" aria-label="Search"><img src="assets/search.png" alt=""></span>
+      <span type="button" class="icon-button mic-button" aria-label="Microphone"><img src="assets/mic.png"
+          alt=""></span>
+    </div>
+    <div class="header-actions">
+      <a class="icon-button" href="https://www.youtube.com/upload" aria-label="Create on YouTube"><img
+          src="assets/create.png" alt=""></a>
+      <span class="icon-button" aria-label="YouTube apps"><img src="assets/more.png" alt=""></span>
+      <span class="icon-button" aria-label="Notifications"><img src="assets/bell.png" alt=""></span>
+      <span class="profile" aria-label="Demo account">N</span>
+    </div>
+  </header>
+  <div class="page-layout">
+
+    <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+      <nav class="nav-group">
+        <a class="nav-link active" href="index.html" aria-current="page"><img src="assets/home.png"
+            alt=""><span>Home</span></a>
+        <a class="nav-link" href="https://www.youtube.com/feed/explore"><img src="assets/explore.png"
+            alt=""><span>Explores</span></a>
+        <a class="nav-link" href="https://www.youtube.com/shorts"><img src="assets/shorts.png"
+            alt=""><span>Shorts</span></a>
+        <a class="nav-link" href="https://www.youtube.com/feed/subscriptions"><img src="assets/subscription.png"
+            alt=""><span>Subscriptions</span></a>
+      </nav>
+      <nav class="nav-group">
+        <a class="nav-link" href="https://www.youtube.com/feed/library"><img src="assets/library.png"
+            alt=""><span>Library</span></a>
+        <a class="nav-link" href="https://www.youtube.com/feed/history"><img src="assets/history.png"
+            alt=""><span>History</span></a>
+        <a class="nav-link" href="https://www.youtube.com/feed/you"><img src="assets/your_video.png" alt=""><span>Your
+            videos</span></a>
+        <a class="nav-link" href="https://www.youtube.com/playlist?list=WL"><img src="assets/watch_later.png"
+            alt=""><span>Watch later</span></a>
+        <a class="nav-link" href="https://www.youtube.com/playlist?list=LL"><img src="assets/liked.png"
+            alt=""><span>Liked videos</span></a>
+        <div class="nav-link"><img src="assets/down_arrow.png" alt=""><span>Show more</span></div>
+      </nav>
+      <nav class="nav-group subscriptions" aria-label="Subscriptions">
+        <h2>SUBSCRIPTIONS</h2>
+        <a class="nav-link" href="https://www.youtube.com/results?search_query=Nadir%20On%20The%20Go"><img
+            src="assets/Ellipse 1.png" alt=""><span>Nadir On The Go</span></a>
+        <a class="nav-link" href="https://www.youtube.com/results?search_query=Coke%20Studio%20Bangla"><img
+            src="assets/Ellipse 1 (1).png" alt=""><span>Coke Studio Bangla</span></a>
+        <a class="nav-link" href="https://www.youtube.com/results?search_query=MKBHD"><img
+            src="assets/Ellipse 1 (2).png" alt=""><span>MKBHD</span></a>
+        <a class="nav-link" href="https://www.youtube.com/results?search_query=Figma"><img
+            src="assets/Ellipse 1 (3).png" alt=""><span>Figma</span></a>
+        <a class="nav-link" href="https://www.youtube.com/results?search_query=ATC%20Android%20ToTo%20Company"><img
+            src="assets/Ellipse 1 (4).png" alt=""><span>ATC Android ToTo Company</span></a>
+        <a class="nav-link" href="https://www.youtube.com/results?search_query=Alux.com"><img
+            src="assets/Ellipse 1 (5).png" alt=""><span>Alux.com</span></a>
+        <a class="nav-link" href="https://www.youtube.com/results?search_query=fitness"><img
+            src="assets/Ellipse 1 (6).png" alt=""><span>Fitness</span></a>
+      </nav>
+    </aside>
+    <main>
+      <div class="topics-wrap">
+        <nav class="topics" aria-label="Video topics">
+          <span class="topic selected">All</span>
+          <span class="topic">Cook Studio</span>
+          <span class="topic">UX</span>
+          <span class="topic">Case Study</span>
+          <span class="topic">Music</span>
+          <span class="topic">Bnagla Lofi</span>
+          <span class="topic">Tour</span>
+          <span class="topic">Saintmartin</span>
+          <span class="topic">Tech</span>
+          <span class="topic">iPhone 13</span>
+          <span class="topic">User Interface Design</span>
+          <span class="topic">Computers</span>
+        </nav>
+      </div>
+
+      <section class="video-grid" id="videos" aria-label="Recommended videos">
+        <article class="video-card">
+          <a class="thumbnail-link"
+            href="https://www.youtube.com/results?search_query=Bulbuli%20%7C%20Coke%20Studio%20Bangla%20%7C%20Season%20One%20%7C%20Ritu%20Raj%20X%20Nandita"
+            aria-label="Find Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita on YouTube"><img
+              src="assets/Thumbnail-8.png" class="thumbnail"
+              alt="Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita"></a>
+          <div class="video-details">
+            <img src="assets/Ellipse 4 (1).png" class="channel-avatar" alt="">
+            <div class="video-copy">
+              <h2><a
+                  href="https://www.youtube.com/results?search_query=Bulbuli%20%7C%20Coke%20Studio%20Bangla%20%7C%20Season%20One%20%7C%20Ritu%20Raj%20X%20Nandita">Bulbuli
+                  | Coke Studio Bangla | Season One | Ritu Raj X Nandita</a></h2>
+              <p class="channel">Coke Studio Bangla<img src="assets/verified.png" class="verified" alt="Verified"></p>
+              <p>1.5M views · 2 days ago</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-card">
+          <a class="thumbnail-link"
+            href="https://www.youtube.com/results?search_query=Infinix%20Note%2012%20%3A%20AMOLED%20Helio%20G88%20SoC!"
+            aria-label="Find Infinix Note 12 : AMOLED Helio G88 SoC! on YouTube"><img src="assets/Thumbnail-9.png"
+              class="thumbnail" alt="Infinix Note 12 : AMOLED Helio G88 SoC!"></a>
+          <div class="video-details">
+            <img src="assets/Ellipse 4 (2).png" class="channel-avatar" alt="">
+            <div class="video-copy">
+              <h2><a
+                  href="https://www.youtube.com/results?search_query=Infinix%20Note%2012%20%3A%20AMOLED%20Helio%20G88%20SoC!">Infinix
+                  Note 12 : AMOLED Helio G88 SoC!</a></h2>
+              <p class="channel">ATC Android ToTo Company<img src="assets/verified.png" class="verified" alt="Verified">
+              </p>
+              <p>4.2M views · 2 days ago</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-card">
+          <a class="thumbnail-link"
+            href="https://www.youtube.com/results?search_query=My%20first%20UX%20Design%20case%20study%20-%20This%20got%20me%20my%20first%20job."
+            aria-label="Find My first UX Design case study - This got me my first job. on YouTube"><img
+              src="assets/Thumbnail-10.png" class="thumbnail"
+              alt="My first UX Design case study - This got me my first job."></a>
+          <div class="video-details">
+            <img src="assets/Ellipse 4 (3).png" class="channel-avatar" alt="">
+            <div class="video-copy">
+              <h2><a
+                  href="https://www.youtube.com/results?search_query=My%20first%20UX%20Design%20case%20study%20-%20This%20got%20me%20my%20first%20job.">My
+                  first UX Design case study - This got me my first job.</a></h2>
+              <p class="channel">Saptarshi Prakash</p>
+              <p>4.8K views · 1 year ago</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-card">
+          <a class="thumbnail-link" href="https://www.youtube.com/results?search_query=My%20Mix"
+            aria-label="Find My Mix on YouTube"><img src="assets/Thumbnail-11.png" class="thumbnail" alt="My Mix"></a>
+          <div class="video-details mix-details">
+
+            <div class="video-copy">
+              <h2><a href="https://www.youtube.com/results?search_query=My%20Mix">My Mix</a></h2>
+              <p class="channel">Lopamudra Mitra, Anupam Roy, and more</p>
+
+            </div>
+          </div>
+        </article>
+        <article class="video-card">
+          <a class="thumbnail-link"
+            href="https://www.youtube.com/results?search_query=UX%20Design%20-%20What%20is%20it%3F%20(From%20AJ%20%26Smart)"
+            aria-label="Find UX Design - What is it? (From AJ &amp;Smart) on YouTube"><img src="assets/Thumbnail-4.png"
+              class="thumbnail" alt="UX Design - What is it? (From AJ &amp;Smart)"></a>
+          <div class="video-details">
+            <img src="assets/Ellipse 4 (4).png" class="channel-avatar" alt="">
+            <div class="video-copy">
+              <h2><a
+                  href="https://www.youtube.com/results?search_query=UX%20Design%20-%20What%20is%20it%3F%20(From%20AJ%20%26Smart)">UX
+                  Design - What is it? (From AJ &amp;Smart)</a></h2>
+              <p class="channel">AJ&amp;Smart<img src="assets/verified.png" class="verified" alt="Verified"></p>
+              <p>150K views · 3 years ago</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-card">
+          <a class="thumbnail-link"
+            href="https://www.youtube.com/results?search_query=Mix%20-%20Mombati%20%7C%20Mohon%20Sharif%20%7C%20Dhakaiya%20Dose%20%7C%20Mahib%20Ahsan%20ft%20Anika"
+            aria-label="Find Mix - Mombati | Mohon Sharif | Dhakaiya Dose | Mahib Ahsan ft Anika on YouTube"><img
+              src="assets/Thumbnail-5.png" class="thumbnail"
+              alt="Mix - Mombati | Mohon Sharif | Dhakaiya Dose | Mahib Ahsan ft Anika"></a>
+          <div class="video-details mix-details">
+
+            <div class="video-copy">
+              <h2><a
+                  href="https://www.youtube.com/results?search_query=Mix%20-%20Mombati%20%7C%20Mohon%20Sharif%20%7C%20Dhakaiya%20Dose%20%7C%20Mahib%20Ahsan%20ft%20Anika">Mix
+                  - Mombati | Mohon Sharif | Dhakaiya Dose | Mahib Ahsan ft Anika</a></h2>
+              <p class="channel">Mohon Sharif, Odd Signature, Shayan Chowdhury Arnob, and more</p>
+
+            </div>
+          </div>
+        </article>
+        <article class="video-card">
+          <a class="thumbnail-link"
+            href="https://www.youtube.com/results?search_query=%E0%A7%AA%E0%A7%AE%20%E0%A6%9F%E0%A6%BF%20%E0%A6%AD%E0%A6%BF%E0%A6%B8%E0%A6%BE-%E0%A6%9B%E0%A6%BE%E0%A6%A1%E0%A6%BC%E0%A6%BE%20%E0%A6%A6%E0%A7%87%E0%A6%B6%20%7C%2048%20VISA-FREE"
+            aria-label="Find ৪৮ টি ভিসা-ছাড়া দেশ | 48 VISA-FREE on YouTube"><img src="assets/Thumbnail-6.png"
+              class="thumbnail" alt="৪৮ টি ভিসা-ছাড়া দেশ | 48 VISA-FREE"></a>
+          <div class="video-details">
+            <img src="assets/Ellipse 4 (5).png" class="channel-avatar" alt="">
+            <div class="video-copy">
+              <h2><a
+                  href="https://www.youtube.com/results?search_query=%E0%A7%AA%E0%A7%AE%20%E0%A6%9F%E0%A6%BF%20%E0%A6%AD%E0%A6%BF%E0%A6%B8%E0%A6%BE-%E0%A6%9B%E0%A6%BE%E0%A6%A1%E0%A6%BC%E0%A6%BE%20%E0%A6%A6%E0%A7%87%E0%A6%B6%20%7C%2048%20VISA-FREE">৪৮
+                  টি ভিসা-ছাড়া দেশ | 48 VISA-FREE</a></h2>
+              <p class="channel">Nadir On The Go</p>
+              <p>1.7M views · 1 year ago</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-card">
+          <a class="thumbnail-link"
+            href="https://www.youtube.com/results?search_query=14%20Advanced%20Tips%20to%20Design%20FASTER%20in%20Figma"
+            aria-label="Find 14 Advanced Tips to Design FASTER in Figma on YouTube"><img src="assets/Thumbnail-7.png"
+              class="thumbnail" alt="14 Advanced Tips to Design FASTER in Figma"></a>
+          <div class="video-details">
+            <img src="assets/Ellipse 4 (6).png" class="channel-avatar" alt="">
+            <div class="video-copy">
+              <h2><a
+                  href="https://www.youtube.com/results?search_query=14%20Advanced%20Tips%20to%20Design%20FASTER%20in%20Figma">14
+                  Advanced Tips to Design FASTER in Figma</a></h2>
+              <p class="channel">Mizko<img src="assets/verified.png" class="verified" alt="Verified"></p>
+              <p>53K views · 1 year ago</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-card">
+          <a class="thumbnail-link"
+            href="https://www.youtube.com/results?search_query=%E0%A6%AD%E0%A6%BE%E0%A6%A4%20%E0%A6%A8%E0%A6%BE%E0%A6%95%E0%A6%BF%20%E0%A6%AC%E0%A6%BE%E0%A6%B2%E0%A7%81%E0%A6%B0%20%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87%3F%20%7C%20Exploring%20the%20desert"
+            aria-label="Find ভাত নাকি বালুর দেশে? | Exploring the desert on YouTube"><img src="assets/Thumbnail.png"
+              class="thumbnail" alt="ভাত নাকি বালুর দেশে? | Exploring the desert"></a>
+          <div class="video-details">
+            <img src="assets/Ellipse 4 (5).png" class="channel-avatar" alt="">
+            <div class="video-copy">
+              <h2><a
+                  href="https://www.youtube.com/results?search_query=%E0%A6%AD%E0%A6%BE%E0%A6%A4%20%E0%A6%A8%E0%A6%BE%E0%A6%95%E0%A6%BF%20%E0%A6%AC%E0%A6%BE%E0%A6%B2%E0%A7%81%E0%A6%B0%20%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87%3F%20%7C%20Exploring%20the%20desert">ভাত
+                  নাকি বালুর দেশে? | Exploring the desert</a></h2>
+              <p class="channel">Nadir On The Go</p>
+              <p>1.2M views · 1 year ago</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-card">
+          <a class="thumbnail-link"
+            href="https://www.youtube.com/results?search_query=Tech%20skills%20every%20designer%20should%20learn"
+            aria-label="Find Tech skills every designer should learn on YouTube"><img src="assets/Thumbnail-1.png"
+              class="thumbnail" alt="Tech skills every designer should learn"></a>
+          <div class="video-details">
+            <img src="assets/Ellipse 4-1.png" class="channel-avatar" alt="">
+            <div class="video-copy">
+              <h2><a
+                  href="https://www.youtube.com/results?search_query=Tech%20skills%20every%20designer%20should%20learn">Tech
+                  skills every designer should learn</a></h2>
+              <p class="channel">Design with me</p>
+              <p>125K views · 1 year ago</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-card">
+          <a class="thumbnail-link"
+            href="https://www.youtube.com/results?search_query=A%20day%20in%20the%20life%20at%20Google"
+            aria-label="Find A day in the life at Google on YouTube"><img src="assets/Thumbnail-2.png" class="thumbnail"
+              alt="A day in the life at Google"></a>
+          <div class="video-details">
+            <img src="assets/Ellipse 4-1.png" class="channel-avatar" alt="">
+            <div class="video-copy">
+              <h2><a href="https://www.youtube.com/results?search_query=A%20day%20in%20the%20life%20at%20Google">A day
+                  in the life at Google</a></h2>
+              <p class="channel">Life at Google<img src="assets/verified.png" class="verified" alt="Verified"></p>
+              <p>2.1M views · 1 year ago</p>
+            </div>
+          </div>
+        </article>
+        <article class="video-card">
+          <a class="thumbnail-link"
+            href="https://www.youtube.com/results?search_query=From%20university%20to%20Microsoft%20%7C%20Our%20journey"
+            aria-label="Find From university to Microsoft | Our journey on YouTube"><img src="assets/Thumbnail-3.png"
+              class="thumbnail" alt="From university to Microsoft | Our journey"></a>
+          <div class="video-details">
+            <img src="assets/Ellipse 4-1.png" class="channel-avatar" alt="">
+            <div class="video-copy">
+              <h2><a
+                  href="https://www.youtube.com/results?search_query=From%20university%20to%20Microsoft%20%7C%20Our%20journey">From
+                  university to Microsoft | Our journey</a></h2>
+              <p class="channel">Tech Stories</p>
+              <p>320K views · 1 year ago</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

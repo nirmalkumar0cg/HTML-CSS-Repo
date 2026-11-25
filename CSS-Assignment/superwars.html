@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Wars</title>
+    <style>
+        .arena {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .hero-card,
+        .villain-card {
+            width: 200px;
+            height: 300px;
+            border-radius: 10%;
+            box-shadow: 0 4px 12px grey;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-card {
+            padding-left: 15px;
+        }
+
+        .vs-score {
+            width: 200px;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 4em;
+        }
+
+        .arena img {
+            width: 100px;
+            height: 100px;
+            margin-left: -30px;
+        }
+
+        .arena p {
+            width: 100px;
+            font-size: large;
+            padding-top: 10px;
+        }
+
+        .arena .points {
+            margin-top: -3px;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="arena">
+        <div class="hero-card">
+            <img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/01.superwars/super-1.png?raw=true" alt="Spiderman">
+            <p>Spiderman</p>
+            <p class="points">12</p>
+        </div>
+
+        <div class="hero-card">
+            <img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/01.superwars/super-3.png?raw=true" alt="Wonder Women">
+            <p>Wonder Women</p>
+            <p class="points">30</p>
+        </div>
+
+        <div class="vs-score">5 - 0</div>
+
+        <div class="villain-card">
+            <img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/01.superwars/super-2.png?raw=true" alt="Captaan America">
+            <p>Captaan America</p>
+            <p class="points">50</p>
+        </div>
+
+        <div class="villain-card">
+            <img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/01.superwars/super-4.png?raw=true" alt="Gem Women">
+            <p>Gem Women</p>
+            <p class="points">12</p>
+        </div>
+    </div>
+
+</body>
+</html>

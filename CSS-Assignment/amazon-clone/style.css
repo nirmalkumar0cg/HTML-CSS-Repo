@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+span,p{
+    color: white;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#121921;
+}
+.address{
+    display: flex;
+}
+.address img{
+    padding-top: 8%;
+}
+.address div p span{
+    font-weight: lighter;
+    color: gray;
+}
+.search{
+    display: flex;
+    width: 50%;
+    height: 30px;
+}
+.search input{
+    border: none;
+    width: 100%;
+}
+.search div{
+    display: flex;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 5px;
+    font-size: small;
+    gap:8px;
+}
+.search div p{
+    color: black;
+}
+.search .imgg{
+    background-color:#FBBE67;
+    padding: 1%;
+    width: 3%;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.flag{
+    display: flex;
+    align-items: flex-end;
+}
+.cart{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    display: flex;
+}
+.signin span{
+    font-size: 12px;
+}
+.navigationlinks{
+    background-color:#243040;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    height: 40px;
+}
+.all{
+    display: flex;
+    padding-left: 20%;
+    margin-right: 20px;
+    width: 100%;
+    gap:5%;
+}
+.lion img{
+    height: 40px;
+    display: flex;
+    margin-left: 90px
+}
+.u{
+    display: flex;
+    font-weight: bolder;
+    position: relative;
+    top:9px;
+    right: 32px;
+}
+.prime{
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    font-size: large;
+    justify-content: center;
+}
+.background{
+    background-image: url(./assets/background\ picture.png);
+    width:100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.arrows{
+    display: flex;
+    gap:95%;
+    padding-left: 20px;
+    position: relative;
+    top:100px;
+}
+.productcards{
+    background-color: white;
+    margin-top: 250px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    width: max-content;
+}
+.productcards p{
+    color: black;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.productimage{
+    display: flex;
+    gap:1%;
+}
+.card h2{
+    font-weight: normal;
+    width: 300px;
+}
+.productcard{
+    display: flex;
+    gap:1%;
+}
+.signin-section{
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 340px;
+}
+.signin-card{
+    background-color: white;
+    padding: 20px;
+    
+}
+.signin-card h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    line-height: 1.3;
+}
+.signin-card button{
+    width: 100%;
+    background-color: #FFD814;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 0;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+}
+.laptop-banner{
+    width: 100%;
+}
+.laptop-banner img{
+    width: 100%;
+    display: block;
+}
